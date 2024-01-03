@@ -8,6 +8,7 @@ import { HeaderComponent } from './components/partials/header/header.component';
 // material
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import {MatButtonModule} from '@angular/material/button';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,MatMenuModule, MatButtonModule
+    AppRoutingModule,MatMenuModule, MatButtonModule, BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

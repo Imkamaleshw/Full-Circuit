@@ -1,14 +1,21 @@
 <header>
   <div class="container">
-    <a routerLink="/">Food Mine</a>
-    <div>
-      <a routerLink="/login">Login</a>
-      <a routerLink="/dashboard" [matMenuTriggerFor]="menu">Kamalesh</a>
+    <div style="width: 50%" class="heading">
+      <a routerLink="/">Food Mine!</a>
+    </div>
+    <div class="header-options">
+      <a routerLink="/login" class="header-options-element">Login</a>
+      <a
+        routerLink="/dashboard"
+        [matMenuTriggerFor]="menu"
+        class="header-options-element"
+        >Kamalesh</a
+      >
       <mat-menu #menu="matMenu">
         <button mat-menu-item>Item 1</button>
         <button mat-menu-item>Item 2</button>
       </mat-menu>
-      <a routerLink="/cart">Cart</a>
+      <a routerLink="/cart" class="header-options-element">Cart</a>
     </div>
   </div>
 </header>
