@@ -1,19 +1,21 @@
 <header>
   <div class="container">
-    <a routerLink="/">Food Mine</a>
-    <!-- <nav>
-      <ul>
-        <li><a>login</a></li>
-        <li>
-          <a routerLink="/dashboard">Kamalesh</a>
-          <div class="menu">
-            <a routerLink="/profiles">profile</a>
-            <a routerLink="/orders">orders</a>
-            <a>logout</a>
-          </div>
-        </li>
-        <li></li>
-      </ul>
-    </nav> -->
+    <div style="width: 50%" class="heading">
+      <a routerLink="/">Food Mine!</a>
+    </div>
+    <div class="header-options">
+      <a routerLink="/login" class="header-options-element">Login</a>
+      <a
+        routerLink="/dashboard"
+        [matMenuTriggerFor]="menu"
+        class="header-options-element"
+        >Kamalesh</a
+      >
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+      <a routerLink="/cart" class="header-options-element">Cart</a>
+    </div>
   </div>
 </header>
